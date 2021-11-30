@@ -1,26 +1,32 @@
 <template>
   <div id="app">
     <div id="view-contianer">
-      <img src="./assets/logo.png">
-      <router-view/>
+      <router-view />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-}
+  name: "App",
+};
 </script>
 
 <style>
-  #app{
-    background-color: #d9feff;
+:root {
+  font-size: 1em;
+}
+@media (min-width: 425px){
+  :root{
+    font-size: 1.5em;
   }
-  #view-contianer{
-    background-color: #ffffff;
-    max-width: 768px;
-    margin: 0 auto;
-    text-align: center;
-  }
+}
+#app {
+  background-color: #d9feff;
+}
+#view-contianer {
+  background-color: #ffffff;
+  max-width: 768px;
+  margin: 0 auto;
+}
 </style>
